@@ -26,4 +26,7 @@ INSERT INTO Peliculas VALUES (12, 'coches 2', 'Juan Lasseter', 2011, 120);
 INSERT INTO Peliculas VALUES (13, 'Corajudo', 'Brenda Chapman', 2012, 102);
 INSERT INTO Peliculas VALUES (14, 'Monsters University', 'Daniel Scanlon', 2013, 110);
 
+-- 1. Encuentra el titulo de cada película.
 
+-- selecciona la columna Titulo de Peliculas
+SELECT Titulo AS TITULO PELICULA FROM Peliculas
