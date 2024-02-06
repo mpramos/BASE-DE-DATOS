@@ -41,3 +41,5 @@ SELECT Titulo || '-' || Director AS Titulo-Director FROM Peliculas
 -- 4. Encuentra el titulo y director de cada película.
 SELECT Titulo || '-' || Anio AS Titulo-Año FROM Peliculas
 
+--5 Encuentra toda la información de las películas
+SELECT * FROM Peliculas
