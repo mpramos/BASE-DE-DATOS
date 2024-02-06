@@ -1,3 +1,3 @@
--- primera consulta 
+-- SELECT
 SELECT *
 FROM mytable1;
