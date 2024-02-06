@@ -30,3 +30,14 @@ INSERT INTO Peliculas VALUES (14, 'Monsters University', 'Daniel Scanlon', 2013,
 
 -- selecciona la columna Titulo de Peliculas
 SELECT Titulo AS TITULO PELICULA FROM Peliculas
+
+
+-- 2. Encuentra el **director** de cada película.
+SELECT Director AS Directores FROM Peliculas
+
+-- 3. Encuentra el titulo y director de cada película.
+SELECT Titulo || '-' || Director AS Titulo-Director FROM Peliculas
+
+-- 4. Encuentra el titulo y director de cada película.
+SELECT Titulo || '-' || Anio AS Titulo-Año FROM Peliculas
+
