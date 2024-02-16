@@ -20,3 +20,64 @@ VALUES
         (4 , 8.1 , 289916256 , 272900000),
         (2 , 7.2 , 162798565 , 200600000),
         (13 , 7.2 , 237283207 , 301700000)
+
+CREATE TABLE Edificios(
+    Nombre_Del_Edificio TEXT PRIMARY KEY,
+    Capacidad INTEGER
+)
+
+INSERT INTO Edificios (Nombre_Del_Edificio,Capacidad)
+VALUES 
+( '1e' , 24 ),
+( '1s' , 32 ),
+( '2e' , 16 ),
+( '2w' , 20 )
+-- Tabla: Empleados (Solo Lectura)
+
+-- | Role | Nombre | Edificio | Años_empleado |
+-- | --- | --- | --- | --- |
+-- | Ingeniero | Becky A. | 1e | 4 |
+-- | Ingeniero | Dan B. | 1e | 2 |
+-- | Ingeniero | Sharon F. | 1e | 6 |
+-- | Ingeniero | Dan M. | 1e | 4 |
+-- | Ingeniero | Malcom S. | 1e | 1 |
+-- | Artista | tylar s. | 2w | 2 |
+-- | Artista | Sherman D. | 2w | 8 |
+-- | Artista | Jacob J. | 2w | 6 |
+-- | Artista | Lilia A. | 2w | 7 |
+-- | Artista | Brandon J. | 2w | 7 |
+-- | Gerente | Scott K. | 1e | 9 |
+-- | Gerente | Shirlee M. | 1e | 3 |
+-- | Gerente | Daria O. | 2w | 6 |
+
+
+CREATE TABLE Empleados (
+    Role TEXT,
+    Nombre TEXT,
+    Edificio TEXT,
+    Años_empleado INTEGER)
+
+INSERT INTO Empleados (
+    Role ,
+    Nombre ,
+    Edificio ,
+    Años_empleado 
+)
+VALUES
+    ('Ingeniero' , 'Becky A. ', '1e' , 4 ),
+    ('Ingeniero' , 'Dan B.' , '1e' , 2 ),
+    ('Ingeniero' , 'Sharon F.' , '1e' , 6 ),
+    ('Ingeniero' ,' Dan M. ', '1e' , 4 ),
+    ('Ingeniero' , 'Malcom S.' , '1e' , 1 ),
+    ('Artista' , 'tylar s. ',' 2w' , 2 ),
+    ('Artista' , 'Sherman D. ',' 2w' , 8 ),
+    ('Artista' , 'Jacob J' ,' 2w' , 6 ),
+    ('Artista' , 'Lilia A' ,' 2w' , 7 ),
+    ('Artista' , 'Brandon J' ,' 2w' , 7 ),
+    ('Gerente' , 'Scott K' , '1e' , 9 ),
+    ('Gerente' , 'Shirlee M' , '1e' , 3 ),
+    ('Gerente' , 'Daria O' ,' 2w' , 6 )
+
+
+
+
