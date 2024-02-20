@@ -21,12 +21,12 @@ VALUES
         (2 , 7.2 , 162798565 , 200600000),
         (13 , 7.2 , 237283207 , 301700000)
 
-CREATE TABLE Edificios(
+CREATE TABLE Edificios1(
     Nombre_Del_Edificio TEXT PRIMARY KEY,
     Capacidad INTEGER
 )
 
-INSERT INTO Edificios (Nombre_Del_Edificio,Capacidad)
+INSERT INTO Edificios1 (Nombre_Del_Edificio,Capacidad)
 VALUES 
 ( '1e' , 24 ),
 ( '1s' , 32 ),
@@ -51,13 +51,13 @@ VALUES
 -- | Gerente | Daria O. | 2w | 6 |
 
 
-CREATE TABLE Empleados (
+CREATE TABLE Empleados1 (
     Role TEXT,
     Nombre TEXT,
     Edificio TEXT,
     Años_empleado INTEGER)
 
-INSERT INTO Empleados (
+INSERT INTO Empleados1 (
     Role ,
     Nombre ,
     Edificio ,
@@ -69,14 +69,16 @@ VALUES
     ('Ingeniero' , 'Sharon F.' , '1e' , 6 ),
     ('Ingeniero' ,' Dan M. ', '1e' , 4 ),
     ('Ingeniero' , 'Malcom S.' , '1e' , 1 ),
-    ('Artista' , 'tylar s. ',' 2w' , 2 ),
-    ('Artista' , 'Sherman D. ',' 2w' , 8 ),
-    ('Artista' , 'Jacob J' ,' 2w' , 6 ),
-    ('Artista' , 'Lilia A' ,' 2w' , 7 ),
-    ('Artista' , 'Brandon J' ,' 2w' , 7 ),
-    ('Gerente' , 'Scott K' , '1e' , 9 ),
-    ('Gerente' , 'Shirlee M' , '1e' , 3 ),
-    ('Gerente' , 'Daria O' ,' 2w' , 6 )
+    ('Artista' , 'tylar s. ','2w' , 2 ),
+    ('Artista' , 'Sherman D. ','2w' , 8 ),
+    ('Artista' , 'Jacob J' ,'2w', 6 ),
+    ('Artista' , 'Lilia A' ,'2w' , 7 ),
+    ('Artista' , 'Brandon J' ,'2w', 7 ),
+    ('Gerente' , 'Scott K' , '1e', 9 ),
+    ('Gerente' , 'Shirlee M' , '1e', 3 ),
+    ('Gerente' , 'Daria O' ,'2w', 6 )
+    ('Ingeniero' , 'Yancy I.' ,NULL, 3 ),
+    ('Artista' , 'óliver p.' ,NULL, 6 )
 
 
 
