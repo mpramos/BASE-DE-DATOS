@@ -79,6 +79,36 @@ VALUES
     ('Gerente' , 'Daria O' ,'2w', 6 )
     ('Ingeniero' , 'Yancy I.' ,NULL, 3 ),
     ('Artista' , 'óliver p.' ,NULL, 6 )
+ -- 1. Cree una nueva tabla nombrada **`Database`**
+    
+    -- con las siguientes columnas:
+    
+    -- – **`Name`**Una cadena (texto) que describe el nombre de la base de datos
+    
+    -- – **`Version`**Un número (punto flotante) de la última versión de esta base de datos
+    
+    -- – **`Download_count`**Un recuento entero del número de veces que se descargó esta base de datos
+    
+    -- Esta tabla no tiene restricciones.
+
+CREATE TABLE Database(
+    Name VARCHAR(255),
+    Version FLOAT ,
+    Download_count INTEGER
+)
+
+CREATE TABLE Aulas (
+    id_aula SERIAL PRIMARY KEY,
+    nombre VARCHAR(50),
+    Capacidad INTEGER
+)
+
+
+INSERT INTO Aulas (nombre,Capacidad) VALUES
+('Aula1',30),
+('Aula2',25),
+('Aula1',20)
+
 
 
 
