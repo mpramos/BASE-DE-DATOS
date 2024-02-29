@@ -3,6 +3,7 @@ SELECT distinct E.nombre_del_edificio
 FROM Edificios AS E
 LEFT JOIN Empleados AS Emp
 ON E.nombre_del_edificio = Emp.Edificio
+
 --? 2. Encuentra la lista de todos los edificios y su capacidad siempre y cuando el edificio tenga empleados.
 SELECT distinct E.nombre_del_edificio , E.capacidad
 FROM Edificios AS E

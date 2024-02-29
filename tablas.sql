@@ -102,8 +102,6 @@ CREATE TABLE Aulas (
     nombre VARCHAR(50),
     Capacidad INTEGER
 )
-
-
 INSERT INTO Aulas (nombre,Capacidad) VALUES
 ('Aula1',30),
 ('Aula2',25),
